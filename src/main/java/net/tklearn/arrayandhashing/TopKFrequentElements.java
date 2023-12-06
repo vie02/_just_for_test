@@ -3,7 +3,6 @@ package net.tklearn.arrayandhashing;
 import java.util.*;
 
 public class TopKFrequentElements {
-    class Solution {
         public static int[] topKFrequent(int[] nums, int top) {
             Map<Integer, Integer> eToC = new HashMap<>();
             for (int n : nums) {
@@ -24,11 +23,9 @@ public class TopKFrequentElements {
                     for (int n : a[i]) {
                         res[ix] = n;
                         ix++;
-                        if (ix == top) break;
                     }
                 }
             }
             return res;
         }
-    }
 }

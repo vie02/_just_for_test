@@ -2,7 +2,7 @@ package net.tklearn.arrayandhashing;
 
 import org.junit.jupiter.api.Test;
 
-import static net.tklearn.arrayandhashing.TopKFrequentElements.Solution.topKFrequent;
+import static net.tklearn.arrayandhashing.TopKFrequentElements.topKFrequent;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class TopKFrequentElementsTests {
