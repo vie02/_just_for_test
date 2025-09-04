@@ -3,15 +3,15 @@ package net.tklearn.leetcode75qs;
 public class IsSubsequence {
 
     public static boolean isSubsequence(String s, String t) {
-        int i = 0;
-        for (int j = 0; j < t.length(); j++) {
-            if (i == s.length()) {
+        int j = 0;
+        for (int i = 0; i < t.length(); i++) {
+            if (j == s.length()) {
                 break;
             }
-            if (t.charAt(j) == s.charAt(i)) {
-                i++;
+            if (t.charAt(i) == s.charAt(j)) {
+                j++;
             }
         }
-        return i == s.length();
+        return j == s.length();
     }
 }
